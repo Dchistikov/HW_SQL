@@ -30,7 +30,8 @@ SET salary = salary * 1.1
 WHERE salary < 20000;
 
 ##Измените статус (status) заказа под номером (id) 5 с delivery на success.
-Решение: UPDATE orders 
+Решение: 
+UPDATE orders 
 SET  status = 'success' 
 Where id = 5;
 
@@ -67,8 +68,8 @@ WHERE year <= 2010;
 DELETE FROM cars 
 WHERE country = 'KR' OR power < 80;
 
-##
-Решение: Удалите из таблицы cars все японские автомобили мощностью менее 80 и более 130 лс. (включая крайние значения).
+##Удалите из таблицы cars все японские автомобили мощностью менее 80 и более 130 лс. (включая крайние значения).
+Решение: 
 DELETE FROM cars 
 WHERE country = 'JP' and (power <= 80 or power >= 130);
 
