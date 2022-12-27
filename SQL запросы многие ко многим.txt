@@ -69,5 +69,3 @@ JOIN products as p ON od.product_id = p.id
 WHERE o.status = 'success'
 GROUP BY o.id
 ORDER BY amount
-
-
